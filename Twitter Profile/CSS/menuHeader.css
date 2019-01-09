@@ -1,0 +1,96 @@
+header{
+    position:relative;
+}
+
+.containerImgCapa{
+    height: 460px;
+}
+
+.imgCapa{
+    width: 100%;
+    height: 100%;
+}
+
+.barraHeader{
+    background:#fff;
+    width:100%;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    box-shadow: 0px 0 1px 1px rgba(0,0,0,0.25);
+}
+
+.listaMenu{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    height:100%;
+}
+
+.itemMenuHeader{
+    margin-left:20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+}
+
+.itemMenuHeader:hover > a > .contador{
+    border-bottom: 2px solid #E81C4F;
+    transition: all .15s ease-in-out;
+    color: #E81C4F; 
+}
+
+.itemMenuHeader > a{
+    text-decoration: none;
+    color: #657786;
+}
+
+.itemMenuHeader > a > span{
+    display:block;
+    text-align: center;
+}
+
+.fotoPerfil{
+    border-radius:50%;
+    position: absolute;
+    left:90px;
+    bottom: -10px;
+    height: 200px;
+    width:200px;
+    border:5px solid white;
+}
+
+.btnEditarPerfil{
+    display: flex;
+    align-items: center;
+    border:1px solid #66757F;
+    text-decoration: none;
+    color: #66757F;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 3px 20px;
+    height:30px;
+    background: #fff;
+}
+
+.btnEditarPerfil:hover{
+    background:#F5F8FA;
+}
+
+.menuHeader{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+}
+
+.contador{
+    font-size: 20px;
+    font-weight: 550;
+    padding-bottom: 5px;
+}
