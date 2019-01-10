@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Página do Google</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="lista">
+        <li class="item"><a href="#">Gmail</a></li>
+        <li class="item"><a href="#">Imagens</a></li>
+        <li class="menu-icon">
+          <i id="btn-menu" name="btn-menu" class="material-icons">apps</i>
+        </li>
+        <li class="item">
+          <div class="btn-sino" id="btn-sino">
+            <img src="imagens/alarm-symbol-of-black-bell.png" id="btn-sino" />
+          </div>
+        </li>
+        <li class="item">
+          <img
+            id="avatar"
+            src="imagens/avatar.png"
+            class="avatar"
+            height="32"
+            width="32"
+          />
+        </li>
+      </ul>
+      <div class="modal-menu-apps" id="modal-menu-apps">
+        <ul id="lista-menu-apps">
+          <li>
+            <img src="imagens/icons8-google-logo-96.png" />
+            <span>Pesquisa</span>
+          </li>
+          <li>
+            <img src="imagens/icons8-reproduzir-youtube-filled-50.png" />
+            <span>Youtube</span>
+          </li>
+          <li>
+            <img src="imagens/icons8-marcador-de-mapa-96.png" />
+            <span>Maps</span>
+          </li>
+          <li>
+            <img src="imagens/icons8-livro-96.png" />
+            <span>Livros</span>
+          </li>
+          <li>
+            <img src="imagens/icons8-livro-96.png" />
+            <span>Livros</span>
+          </li>
+        </ul>
+
+        <div><a href="#">Mais</a></div>
+      </div>
+
+      <div id="modal-notificacoes">
+        <div class="cabecalho">
+          <img src="imagens/settings-work-tool.png" />
+          <h2>Google</h2>
+        </div>
+
+        <div class="corpo"><h4>Tudo em dia</h4></div>
+
+        <div id="footer">
+          <button id="btn-footer">/\</button>
+
+          <div id="mini-modal">
+            <p>Ver todas as notificações de</p>
+            <div>
+              <img src="imagens/icons8-google-logo-96.png" />
+              <img src="imagens/icons8-reproduzir-youtube-filled-50.png" />
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-usuario">
+          <div id="corpo-modal">
+            <div class="area-foto">
+              <div class="img-perfil-modal" id="btn-alterar-foto">
+                <span class="alterar">Alterar</span>
+              </div>
+            </div>
+            <div id="user-data">
+              <p style="font-weight: bold;">Jhonata Galante</p>
+              <p>jhonata.galante@gmail.com</p>
+              <div class="privacidade">
+                <a href="#">Perfil do Google+ </a>
+                <p style="margin: 0px 7px 0px 7px; color: #ccc;">-</p>
+                <a href="#">Privacidade</a>
+              </div>
+              <a href="#" class="btn-conta-google">Conta do Google</a>
+            </div>
+          </div>
+          <div id="footer-modal">
+            <a href="#">Adicionar conta</a> <a id="btn-deslogar">Sair</a>
+          </div>
+        </div>
+
+        <div id="modal-select-photo">
+          <div class="header-modal-select-photo">
+            <div class="titulo-modal-select-photo">
+              <h3>Selecionar foto do Perfil</h3>
+              <i class="fas fa-times" id="header-modal-select-photo"></i>
+            </div>
+
+            <div class="tabHeader">
+              <div>
+                <button id="btn-upload">Fazer upload de fotos</button>
+                <button id="btn-galeria">Suas fotos</button>
+                <button id="btn-fotos-com-voce">Fotos com você</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-body-main">
+            <div class="tab-body" id="tab-body-1">
+              <div>
+                <img src="imagens/image-gallery.png" />
+                <h1>Arraste uma foto do perfil para cá</h1>
+                <p>- ou -</p>
+                <button>Selecionar uma foto do computador</button>
+              </div>
+            </div>
+
+            <div class="tab-body" id="tab-body-2">
+              <div class="campo-busca">
+                <input type="text" /> <button>Search</button>
+              </div>
+              <div class="pasta-foto" id="pasta-foto-1">
+                <img src="imagens/f12529400.jpg" />
+                <div><p>Fotos do celular</p></div>
+              </div>
+            </div>
+
+            <div class="tab-body" id="tab-body-2-1">
+              <div class="navegacao-galeria">
+                <p id="navegacao-voltar">Suas fotos</p>
+                <span>></span>
+                <p>Fotos do celular</p>
+              </div>
+
+              <div class="corpo-galeria">
+                <div>
+                  <div class="data-galeria">
+                    <p>6 de outubro de 2018</p>
+                    <p>09 fotos</p>
+                  </div>
+                  <div class="album-fotos-data">
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="data-galeria">
+                    <p>19 de setembro de 2018</p>
+                    <p>03 fotos</p>
+                  </div>
+                  <div class="album-fotos-data">
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="container-foto">
+                      <img src="imagens/f12529400.jpg" />
+                      <span class="container-menu">
+                        <div>
+                          <i class="fas fa-undo"></i>
+                          <i class="fas fa-redo"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-body" id="tab-body-3">
+              <div><p>Não há fotos</p></div>
+            </div>
+          </div>
+
+          <div class="footer-modal-select-photo">
+            <div class="botoes-footer">
+              <a href="#" class="btn-definir-foto">Definir como foto do perfil</a>
+              <a href="#" class="btn-cancelar-definir-foto">Cancelar</a>
+              <div>
+                <p>
+                  Sua foto do perfil é visivel para todos, em todos os produtos
+                  do Google. <a href="#">Saiba mais</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="logo">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        />
+      </div>
+
+      <form class="form-pesquisa">
+        <input
+          class="campo-pesquisa"
+          type="search"
+          placeholder="Pesquise no Google ou digite um URL"
+        />
+        <span id="btn-gravar-voz"
+          ><img src="imagens/microphone-black-shape.png"
+        /></span>
+      </form>
+
+      <div id="pagina-de-voz">
+        <div id="btn-fechar-pagina-voz"><i class="fas fa-times"></i></div>
+        <div>
+          <h1>Fale agora</h1>
+          <img src="imagens/condenser-microphone-recording.png" />
+        </div>
+      </div>
+
+      <div class="mais-acessados">
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://imagepng.org/wp-content/uploads/2017/08/whatsapp-icone-7.png"
+            />
+          </div>
+          <p>WhatsApp</p>
+        </div>
+        <div id="add-atalho">
+          <div>+</div>
+          <p>Adicionar...</p>
+        </div>
+      </div>
+
+      <div id="modal-add-atalho">
+        <div class="corpo-modal">
+          <p class="titulo">Adicionar atalho</p>
+          <form class="form-atalho">
+            <label>Nome</label> <input type="text" />
+
+            <label>URL</label>
+            <input type="text" value="" oninput="checkCampoUrl(this.value)" />
+          </form>
+        </div>
+        <div class="footers">
+          <a href="#" id="btn-remover" onclick="fecharModal()">Remover</a>
+          <div style="float:right;">
+            <a href="#" id="btn-cancelar" onclick="fecharModal()">Cancelar</a>
+            <a href="#" id="btn-concluido" onclick="fecharModal()">Concluído</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="btn-personalizar">
+      <img id="icone-personalizar" src="imagens/settings-work-tool.png" />
+    </footer>
+
+    <div id="modal-personalizar-pagina">
+      <p class="titulo">Personalizar esta página</p>
+      <div id="restaurar-padrao">
+        <img
+          height="20px"
+          width="20px"
+          style="display:inline-block;padding:5px;"
+          src="chain-links.png"
+        />
+        <p
+          style="display:inline-block;color:#F2F3F7; padding:5px; margin-left:10px;font-size: 13px;"
+        >
+          Restaurar atalhos padrão
+        </p>
+      </div>
+    </div>
+    <script>
+      (function name(params) {
+        "use strict";
+        document
+          .getElementById("footer")
+          .addEventListener("mouseover", function() {
+            document.getElementById("mini-modal").style.display = "flex";
+            document.getElementById("mini-modal").style.transform = "";
+            document.getElementById("btn-footer").style.display = "none";
+          });
+
+        document
+          .getElementById("footer")
+          .addEventListener("mouseout", function() {
+            document.getElementById("mini-modal").style.display = "none";
+            document.getElementById("btn-footer").style.display = "block";
+          });
+        var btnUpload = document.getElementById("btn-upload");
+        var btnGaleria = document.getElementById("btn-galeria");
+        var btnFotosComVoce = document.getElementById("btn-fotos-com-voce");
+
+        btnUpload.addEventListener("click", function() {
+          document.getElementById("tab-body-1").style.display = "flex";
+          document.getElementById("tab-body-2").style.display = "none";
+          document.getElementById("tab-body-3").style.display = "none";
+          document.getElementById("tab-body-2-1").style.display = "none";
+          this.style.fontWeight = "bold";
+          this.style.borderBottom = "2px solid blue";
+          this.style.outline = "none";
+          btnGaleria.style.fontWeight = "100";
+          btnGaleria.style.borderBottom = "none";
+          btnFotosComVoce.style.fontWeight = "100";
+          btnFotosComVoce.style.borderBottom = "none";
+        });
+
+        btnGaleria.addEventListener("click", function() {
+          document.getElementById("tab-body-2").style.display = "flex";
+          document.getElementById("tab-body-1").style.display = "none";
+          document.getElementById("tab-body-3").style.display = "none";
+          document.getElementById("tab-body-2-1").style.display = "none";
+          this.style.fontWeight = "bold";
+          this.style.borderBottom = "2px solid blue";
+          this.style.outline = "none";
+          btnUpload.style.fontWeight = "100";
+          btnUpload.style.borderBottom = "none";
+          btnFotosComVoce.style.fontWeight = "100";
+          btnFotosComVoce.style.borderBottom = "none";
+        });
+
+        btnFotosComVoce.addEventListener("click", function() {
+          document.getElementById("tab-body-3").style.display = "flex";
+          document.getElementById("tab-body-1").style.display = "none";
+          document.getElementById("tab-body-2").style.display = "none";
+          document.getElementById("tab-body-2-1").style.display = "none";
+          this.style.fontWeight = "bold";
+          this.style.borderBottom = "2px solid blue";
+          this.style.outline = "none";
+          btnGaleria.style.fontWeight = "100";
+          btnGaleria.style.borderBottom = "none";
+          btnUpload.style.fontWeight = "100";
+          btnUpload.style.borderBottom = "none";
+        });
+        var pastaFoto1 = document.getElementById("pasta-foto-1");
+
+        pastaFoto1.addEventListener("click", function() {
+          document.getElementById("tab-body-2").style.display = "none";
+          document.getElementById("tab-body-2-1").style.display = "flex";
+        });
+
+        var voltar = document.getElementById("navegacao-voltar");
+
+        voltar.addEventListener("click", function() {
+          document.getElementById("tab-body-2").style.display = "flex";
+          document.getElementById("tab-body-2-1").style.display = "none";
+        });
+        document
+          .getElementById("header-modal-select-photo")
+          .addEventListener("click", function() {
+            document.getElementById("modal-select-photo").style.display = "none";
+          });
+        document
+          .getElementById("btn-gravar-voz")
+          .addEventListener("click", function() {
+            document.getElementById("pagina-de-voz").style.display = "flex";
+          });
+
+        document
+          .getElementById("btn-fechar-pagina-voz")
+          .addEventListener("click", function() {
+            document.getElementById("pagina-de-voz").style.display = "none";
+          });
+        var addAtalho = document.getElementById("add-atalho");
+        addAtalho.addEventListener("click", function() {
+          document.getElementById("modal-add-atalho").style.display = "block";
+        });
+        function fecharModal() {
+          document.getElementById("modal-add-atalho").style.display = "none";
+        }
+        function checkCampoUrl(url) {
+          var btnConcluido = document.getElementById("btn-concluido");
+          if (url !== "") {
+            btnConcluido.style.backgroundColor = "blue";
+            btnConcluido.style.color = "#fff";
+          } else {
+            btnConcluido.style.backgroundColor = "rgba(0,0,0,0.05)";
+            btnConcluido.style.color = "rgba(0,0,0,0.5)";
+          }
+        }
+        var btnPersonalizar = document.getElementById("btn-personalizar");
+        btnPersonalizar.addEventListener("click", function() {
+          document.getElementById("modal-personalizar-pagina").style.display =
+            "block";
+        });
+        document.addEventListener("click", function(e) {
+          var modal = document.getElementById("modal-menu-apps");
+          var modal2 = document.getElementById("modal-notificacoes");
+          var modal3 = document.getElementById("modal-usuario");
+          var modal4 = document.getElementById("modal-personalizar-pagina");
+
+          if (e.target.id == "btn-menu" || e.target.id == "lista-menu-apps") {
+            modal.style.display = "block";
+          } else {
+            modal.style.display = "none";
+          }
+
+          if (
+            e.target.id == "btnSino" ||
+            e.target.id == "imgSino" ||
+            e.target.className == "cabecalho" ||
+            e.target.className == "corpo" ||
+            e.target.className == "footer" ||
+            e.target.id == "mini-modal"
+          ) {
+            modal2.style.display = "block";
+          } else {
+            modal2.style.display = "none";
+          }
+
+          if (
+            e.target.id == "btnPerfil" ||
+            e.target.id == "corpo-modal" ||
+            e.target.id == "user-data" ||
+            e.target.id == "footer-modal"
+          ) {
+            modal3.style.display = "block";
+          } else {
+            modal3.style.display = "none";
+          }
+
+          if (
+            e.target.id == "btn-personalizar" ||
+            e.target.id == "restaurar-padrao" ||
+            e.target.id == "icone-personalizar"
+          ) {
+            modal4.style.display = "block";
+          } else {
+            modal4.style.display = "none";
+          }
+        });
+
+        document
+          .getElementById("btn-alterar-foto")
+          .addEventListener("click", function() {
+            document.getElementById("modal-select-photo").style.display = "block";
+          });
+
+        document
+          .getElementById("btn-deslogar")
+          .addEventListener("click", function() {
+            document.getElementById("btnPerfil").style.display = "none";
+          });
+      })();
+    </script>
+  </body>
+</html>
